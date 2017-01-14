@@ -4,16 +4,19 @@ jQuery(function ($) {
         $('button').addClass('btn-blue');
     });
 
+    /*-----------------------------------*/
 
     $('#remove').on('click', function(){
         $('button').removeClass('btn-blue');
     });
 
+    /*-----------------------------------*/
 
     $('#toggle').on('click', function(){
         $(this).toggleClass('btn-lk btn-orange');
     });
 
+    /*-----------------------------------*/
 
     $('#get').on('click', function(){
 
@@ -24,6 +27,7 @@ jQuery(function ($) {
         console.log('type: ' + typ, 'id: ' + attrId);
     });
 
+    /*-----------------------------------*/
 
     $('#set').on('click', function(){
 
@@ -33,16 +37,19 @@ jQuery(function ($) {
         $('#set').attr({type:value1, style:value2});
     });
 
+    /*-----------------------------------*/
 
     $('#alert').on('click', function(){
         alert('You pushed a button!');
     });
 
+    /*-----------------------------------*/
 
     $('#trig').on('click', function(){
         $('#alert').trigger( "click" );
     });
 
+    /*-----------------------------------*/
 
     $("#clone").on('click', function(){
 
@@ -50,6 +57,7 @@ jQuery(function ($) {
         $("#clone").clone(this).text( textClone + '(cloned)').insertAfter($("#clone"));
     });
 
+    /*-----------------------------------*/
 
     $('#closest').on('click', function(){
 
@@ -57,40 +65,47 @@ jQuery(function ($) {
         console.log(parent);
     });
 
+    /*-----------------------------------*/
 
-    $("#each").on('click', function(){                          /*!!!  Need help here!!!!!*/
+    $("#each").on('click', function(){               /*!!!!!!!!  Need help here!!!!!!!!!!!!*/
 
         var textBtn = $("button").text();
         console.log(textBtn);
     });
 
+    /*-----------------------------------*/
 
-    $('#find').on('click', function(){                          /*!!!  do it`s correct???!!!!!*/
+    $('#find').on('click', function(){             /*!!!!!!!!!1!  do it`s correct???!!!!!*/
         console.log($('body #find'));
 
     });
-
+    /*-----------------------------------*/
+    
     $('#fadeIn').on('click', function(){
         $(".in").fadeIn(400)
     });
 
+    /*-----------------------------------*/
 
     $('#fadeOut').on('click', function(){
         $(".out").fadeOut(400)
     });
 
+    /*-----------------------------------*/
 
     $('#hide').on('click', function(){
         $(".hide").hide(700)
     });
 
+    /*-----------------------------------*/
 
     $('#show').on('click', function(){
         $(".show").show(700)
     });
 
+    /*-----------------------------------*/
 
-    $('#data').on('click', function(){                      /*!!!   Need help here   !!!!!*/
+    $('#data').on('click', function(){            /*!!!!!!!!!!   Need help here   !!!!!*/
 
         var hei = $('#data').outerHeight(),
             wid = $('#data').outerWidth(),

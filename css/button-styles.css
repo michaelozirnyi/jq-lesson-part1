@@ -10,10 +10,11 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 button {
-    margin: 15px auto;
+    margin: 10px auto;
     width: 150px;
     font-size: 18px;
 }
@@ -59,5 +60,5 @@ button {
 p {
     width: 450px;
     margin: 0 auto;
-    text-align: center;
 }
+

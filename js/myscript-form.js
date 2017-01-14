@@ -77,4 +77,11 @@ jQuery(function ($) {
             return false;
         });
     });
+
+
+
+
+
+   /* $("input:last").prop({"disabled":false, "checked":true})*/
+
 });

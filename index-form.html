@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery lesson</title>
+    <link rel="stylesheet" href="css/form-styles.css" type="text/css">
+</head>
+<body>
+    <div class="contant">
+        <h2>Форма заказа</h2>
+        <form action="mailto:#" method="get">
+            <fieldset>
+                <legend><strong>Ваши данные</strong></legend>
+                <label>
+                    Имя:<input id="name" type="text"><br>
+                </label>
+                <label>
+                    Фамилия:<input id="surname" type="text"><br>
+                </label>
+                <label>
+                    Email:
+                    <input id="email" type="email">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Надпись на стакане:</strong></legend>
+                <label>
+                    Имя:<input id="copyName" type="text"><br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <select size="1" title="Выберете позицию">
+                    <option>Первая позиция</option>
+                    <option>Вторая позиция</option>
+                    <option>Третья позиция</option>
+                </select>
+                <select title="Выберете позицию второго селекта.">
+                    <option>Первая позиция</option>
+                    <option>Вторая позиция</option>
+                    <option>Третья позиция</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Radio buttons</strong></legend>
+                <p>Ваше предпочтение:</p>
+                <label>
+                    <input type="radio" value="tea" name="drink">Чай
+                </label>
+                <label>
+                    <input type="radio" value="coffe" name="drink">Кофе
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Добавить в напиток:</strong></legend>
+                <label>
+                    <input type="checkbox" value="sugar">Сахар<br>
+                </label>
+                <label>
+                    <input type="checkbox" value="milk">Молоко<br>
+                </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="js/myscript-form.js" type="text/javascript"></script>
+</body>
+</html>

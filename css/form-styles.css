@@ -1,0 +1,25 @@
+body {
+    background: #ccc;
+}
+
+.contant {
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 450px;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+fieldset {
+    margin-top: 20px;
+}
+button {
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+}
+input {
+    margin-bottom: 10px;
+}

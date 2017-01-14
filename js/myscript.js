@@ -65,7 +65,8 @@ jQuery(function ($) {
     });
 
 
-    $('#find').on('click', function(){                          /*!!!  Need help here!!!!!*/
+    $('#find').on('click', function(){                          /*!!!  do it`s correct???!!!!!*/
+        console.log($('body #find'));
 
     });
 
@@ -96,10 +97,11 @@ jQuery(function ($) {
             of = $('#data').offset(),
             /*atr = $('#data').attr(),*/
             par = $('#data').parent(),
-            /*btnNear = $('#data'). __(),*/
+            prev = $('#data').prev(),
+            nex = $('#data').next(),
             tex = $('#data').text();
 
-        console.log(hei, wid, of, par, tex);
+        console.log(hei, wid, of, par, prev, nex, tex);
     });
 });
 

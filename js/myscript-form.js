@@ -2,6 +2,17 @@ jQuery(function ($) {
 
 
 
+    /*$('form').change(function(){
+
+        $('form').val($('#name').val());
+
+        var qwert = $('form').val();
+        console.log();
+    });
+*/
+
+
+
 
 
     $('#name').keyup(function(){
@@ -30,7 +41,6 @@ jQuery(function ($) {
     /*-----------------------------------*/
 
     $('#email').keyup(function(){
-
         console.log( $('#email').change());
     });
 
@@ -74,6 +84,12 @@ jQuery(function ($) {
         $('form').submit(function(){
             var info = $(this).serializeArray();
             console.log(info);
+            return false;
+        });
+
+        $( "form" ).on( "submit", function( event ) {
+            event.preventDefault();
+            console.log( $(this).serialize() );
             return false;
         });
     });

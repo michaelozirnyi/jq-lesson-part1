@@ -104,32 +104,36 @@ jQuery(function ($) {
     /*-----------------------------------*/
 
     $('#show').on('click', function(){
-        $(".show").show(700)
+        $(".show").show(700);
     });
 
     /*-----------------------------------*/
 
-    $('#dataAboutMe').on('click', function(){            /*!!!!!!!!!!   Need help here   !!!!!*/
+    $('#dataAboutMe').on('click', function(){
 
         var hei = $('#dataAboutMe').outerHeight(),
             wid = $('#dataAboutMe').outerWidth(),
             of = $('#dataAboutMe').offset(),
-            /*atr = $('#dataAboutMe').attr(),*/
+            attributes = $.each(this.attributes, function() {    /*!!!!!!!!!!   Need help here   !!!!!*/
+                        console.log(this.name, this.value);
+            }),
             par = $('#dataAboutMe').parent(),
             prev = $('#dataAboutMe').prev(),
             nex = $('#dataAboutMe').next(),
             tex = $('#dataAboutMe').text();
 
-        console.log(hei, wid, of, par, prev, nex, tex);
+        console.log(hei, wid, of, attributes, par, prev, nex, tex);
     });
 
 
 
     /*------------ANOTHER METODS--------------------*/
 
-   /* $('#data').on('click', function(){
-        $("#set").data("value2");
-    });*/
+    $('#data').on('click', function(){
+        console.log($("#set").data());
+        alert($('#dataAboutMe').data());
+
+    });
 
     $('#detach').on('click', function(){
         $("#detach").detach();
@@ -153,8 +157,8 @@ jQuery(function ($) {
 
     /*-----------------------------------*/
     $('#index').on('click', function(){
-        $('#index').index()
-        console.log(('Index: ' + $('#index').index()));
+       var ind = $('#index').index();
+        console.log('Index: ' + ind);
     });
 
     /*-----------------------------------*/
@@ -179,8 +183,8 @@ jQuery(function ($) {
 
     /*-----------------------------------*/
     $('#scroll').on('click', function(){
-        $("#main").scroll();
-
+        var scroll = $( window ).scroll();
+        console.log($(scroll));
     });
 
     /*-----------------------------------*/
